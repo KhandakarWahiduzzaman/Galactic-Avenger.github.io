@@ -7,4 +7,4 @@ This is the main repository for Project 1 - Zoo.
 	Leo Chen - lc6003
 
 ### Live Link 
-[Website](https://galactic-avenger.github.io)
+[Website](https://galactic-avenger.github.io/Zoo-Project/)
