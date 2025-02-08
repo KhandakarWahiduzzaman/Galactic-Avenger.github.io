@@ -19,7 +19,7 @@ header {
 /* Image Gallery (3x2 Grid Layout) */
 .image-gallery {
     display: grid;                     /* Uses CSS grid for layout */
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-adjust grid */
     gap: 20px;                          /* Adds spacing between images */
     justify-items: center;               /* Centers images inside the grid */
     padding: 20px;                       /* Adds spacing around the gallery */
