@@ -75,6 +75,28 @@ footer {
     margin-top: 20px;       /* Ensures space above the footer */
 }
 
+/* Animal Info Section */
+.animal-info {
+    text-align: center; /* Centers the text and image */
+    margin: 20px;
+}
+
+.animal-info img {
+    width: 60%; /* Scales image size */
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.animal-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+}
+
 /* Responsive Design */
 
 @media (max-width: 900px) { 
