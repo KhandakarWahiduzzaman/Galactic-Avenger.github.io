@@ -1,5 +1,5 @@
 # Zoo
-This is the main repository for Project 1 - Zoo.
+This is the main repository for The Zoo Website Project.
 
 ### Team Members 
 	Abdulla Saleh - Galactic-Avenger >> Middle East
