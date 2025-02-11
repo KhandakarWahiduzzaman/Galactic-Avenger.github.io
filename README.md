@@ -10,9 +10,9 @@ Repository Link: [GitHub Repository](https://github.com/Galactic-Avenger/Zoo-Pro
 [Website](https://galactic-avenger.github.io/Zoo-Project/)
 
 ## Team Members
-- **[Abdulla Saleh]** - GitHub: @Galactic-Avenger
-- **[Khandakar Wahiduzzaman]** - GitHub: @KhandakarWahiduzzaman
-- **[Leo Chen]** - GitHub: @lc6003
+- **Abdulla Saleh** - GitHub: @Galactic-Avenger
+- **Khandakar Wahiduzzaman** - GitHub: @KhandakarWahiduzzaman
+- **Leo Chen** - GitHub: @lc6003
 
 
 ## Features
