@@ -1,0 +1,25 @@
+/*General body style*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #D3D3D3;
+    margin: 0;
+}
+/*Header style*/
+header {
+    background-color: #F2888B;
+    padding: 25px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 17px;
+}
+/*Footer style*/
+footer {
+    text-align: center;
+    background-color: #F2888B;
+    padding: 10px;
+    margin-top: 125px;
+    font-weight: bold;
+}
