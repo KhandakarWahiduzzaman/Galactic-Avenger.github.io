@@ -5,12 +5,7 @@ header {
     text-align: center;
     color: white;
     font-size: 24px;
-}
-
-/* paragraph style */
-header p {
-    font-style: helvetica;
-    font-size: 18px;
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
 }
 
 /* Body style */
@@ -24,22 +19,27 @@ body {
 
 /* container for the images */
 .Image-container {
-    display: grid;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    padding: 20px; 
 }
 
 /* container for each image */
 .image-list {
     width: 280px;
     height: 400px;
+    background-color: white; 
     display: flex; /* make the image and text container flexbox */
     flex-direction: column; /* stack the image and text on top of each other */
     align-content: center;
     margin: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* smooth transition */
+    padding: 10px;
+    border-radius: 15px; 
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out /* smooth transition */
 }
 
 /* image style */
@@ -58,7 +58,7 @@ body {
     text-align: center; 
     font-weight: bold; 
     margin-top: 10px; /* space between the text and the image */
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 /* when hovering over the image container */
@@ -78,7 +78,9 @@ body {
     background-color: #060928; /* dark blue */
     color: white; /* white text */
     border-radius: 8px; /* rounded corners */
+    border: none; 
     padding: 12px 20px; /* padding inside the button */
+    cursor: pointer;
     font-size: 20px;
     font-weight: bold; 
     font-style: italic; 
@@ -102,4 +104,7 @@ footer {
     color: white; /* white text */
     font-size: 18px;
     font-style: italic;
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
 }
