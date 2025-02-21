@@ -1,3 +1,12 @@
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e6ccb6; /* light brown */
+    margin: 0;
+    padding: 0;
+}
+
 /* Header style */
 header {
     background-color: #111439; /* dark blue */
@@ -6,15 +15,6 @@ header {
     color: white;
     font-size: 24px;
     box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
-}
-
-/* Body style */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #e6ccb6; /* light brown */
-    margin: 0;
-    padding: 0;
 }
 
 /* container for the images */
