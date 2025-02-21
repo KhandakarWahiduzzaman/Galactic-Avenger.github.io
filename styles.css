@@ -14,7 +14,7 @@ header {
     color: white;
     padding: 20px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 1.5s ease-in-out; /* 👈 Fade-in effect */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
 }
 
 header h1 {
@@ -102,7 +102,7 @@ button {
 
 /* Button Hover Effect */
 button:hover {
-    background-color: #a0522d; /* 👈 Darker shade on hover */
+    background-color: #a0522d; /* Darker shade on hover */
 }
 
 /* Footer */
@@ -111,10 +111,10 @@ footer {
     color: white;
     padding: 15px;
     margin-top: 20px;
-    animation: fadeIn 2s ease-in-out; /* 👈 Footer fades in */
+    animation: fadeIn 2s ease-in-out; /* Footer fades in */
 }
 
-/* 👇 Fade-In Animation */
+/* Fade-In Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -125,3 +125,4 @@ footer {
         transform: translateY(0);
     }
 }
+

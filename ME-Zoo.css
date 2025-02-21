@@ -1,4 +1,4 @@
-/* Abdulla' Zoo CSS styling For home page */
+/* Abdulla' Zoo CSS styling For home page and Animal Web pages */
 
 /* The General Page Styling */
 body {
@@ -19,7 +19,7 @@ header {
 /* Image Gallery (3x2 Grid Layout) */
 .image-gallery {
     display: grid;                     /* Uses CSS grid for layout */
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-adjust grid */
     gap: 20px;                          /* Adds spacing between images */
     justify-items: center;               /* Centers images inside the grid */
     padding: 20px;                       /* Adds spacing around the gallery */
@@ -36,7 +36,7 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
 }
 
-/* Removes default link styles for a clean look */
+/* Removes default link styles */
 .image-item a {
     text-decoration: none; /* Removes underlines from links */
     color: black;          /* Ensures text remains black */
@@ -73,6 +73,53 @@ footer {
     text-align: center;     /* Centers text */
     padding: 10px;          /* Adds padding for better spacing */
     margin-top: 20px;       /* Ensures space above the footer */
+}
+
+/* Animal Info Section */
+.animal-info {
+    text-align: center; /* Centers the text and image */
+    margin: 20px;
+}
+
+.animal-info img {
+    width: 60%; /* Scales image size */
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.animal-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+}
+
+/* Homepage Button Styling  */
+.back-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #555;
+}
+
+/* This animation will cause the images and paragraphs to fade in and slide up slightly when the page loads */
+.animal-info img, .animal-info p {
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Responsive Design */
