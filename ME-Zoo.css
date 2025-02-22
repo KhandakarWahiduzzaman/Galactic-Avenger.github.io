@@ -10,10 +10,33 @@ body {
 
 /* Header Styling */
 header {
-    background: #333;          /* Dark background for contrast */
-    color: white;              /* White text for readability */
-    text-align: center;        /* Centers text inside the header */
-    padding: 20px;             /* Adds space inside the header */
+    background: linear-gradient(to right, #2E8B57, #3CB371); /* Smooth green gradient */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative; /* Needed for leaf decorations */
+}
+
+/* 🌿 Leaf Decorations on the Header */
+header::before,
+header::after {
+    content: "🍃"; /* Unicode leaf icon */
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+}
+
+header::before {
+    left: 20px;
+}
+
+header::after {
+    right: 20px;
 }
 
 /* Image Gallery (3x2 Grid Layout) */
@@ -27,7 +50,7 @@ header {
 
 /* Individual Image Item Styling */
 .image-item {
-    width: 250px;                       /* Sets a fixed width for each item */
+    width: 50px;                       /* Sets a fixed width for each item */
     height: auto;                        /* Allows height to adjust */
     text-align: center;                  /* Centers text under images */
     overflow: hidden;                     /* Prevents content from overflowing */
@@ -68,26 +91,47 @@ header {
 
 /* The Footer Styling */
 footer {
-    background: #333;       /* Matches header color */
-    color: white;           /* White text for contrast */
-    text-align: center;     /* Centers text */
-    padding: 10px;          /* Adds padding for better spacing */
-    margin-top: 20px;       /* Ensures space above the footer */
+    background: linear-gradient(to right, #3CB371, #2E8B57); /* Matching green footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+    position: relative; /* Needed for leaf decorations */
+}
+
+/* 🌿 Leaf Decorations on the Footer */
+footer::before,
+footer::after {
+    content: "🍃";
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+}
+
+footer::before {
+    left: 15px;
+}
+
+footer::after {
+    right: 15px;
 }
 
 /* Animal Image Gallery (for 3 images on each animal web page) */
 .animal-gallery {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .animal-gallery img {
     width: 30%;
-    max-width: 300px;
-    height: auto;
+    max-width: 400px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -97,46 +141,57 @@ footer {
     transform: scale(1.05);
 }
 
-/* Animal Info Section */
-.animal-info {
-    text-align: center; /* Centers the text and image */
-    margin: 20px;
-}
-
-.animal-info img {
-    width: 60%; /* Scales image size */
-    max-width: 500px;
-    height: auto;
+/* Info Box Styling */
+.info-box {
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
-}
-
-.animal-info p {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 30px auto;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 20px auto;
-    color: #333;
+    text-align: center;
+    border-left: 5px solid #333; /* Stylish border effect */
+}
+
+/* Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+    .animal-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animal-gallery img {
+        width: 80%;
+        max-width: 400px;
+    }
 }
 
 /* Homepage Button Styling  */
 .back-button {
     text-align: center;
-    margin: 20px;
+    margin: 30px;
 }
 
 .back-button a {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #4CAF50, #45a049); /* Green gradient */
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
 }
 
 .back-button a:hover {
-    background-color: #555;
+    background: linear-gradient(135deg, #388E3C, #2E7D32);
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* This animation will cause the images and paragraphs to fade in and slide up slightly when the page loads */
