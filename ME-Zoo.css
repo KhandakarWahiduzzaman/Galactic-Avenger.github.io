@@ -75,6 +75,28 @@ footer {
     margin-top: 20px;       /* Ensures space above the footer */
 }
 
+/* Animal Image Gallery (for 3 images on each animal web page) */
+.animal-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.animal-gallery img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.animal-gallery img:hover {
+    transform: scale(1.05);
+}
+
 /* Animal Info Section */
 .animal-info {
     text-align: center; /* Centers the text and image */

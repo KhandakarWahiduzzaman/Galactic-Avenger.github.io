@@ -1,0 +1,93 @@
+/*General body style*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #D3D3D3;
+    margin: 0;
+}
+/*Header style*/
+header {
+    background-color: #F2888B;
+    padding: 25px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 17px;
+}
+/*Footer style*/
+footer {
+    text-align: center;
+    background-color: #F2888B;
+    padding: 10px;
+    margin-top: 43px;
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.image {
+    width: 300px;
+    height: 240px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image:hover {
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.summary-box {
+    background-color: #D3D3D3;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 40px auto;
+    margin-top: 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.summary-box:hover {
+    transform: scale(1.1);
+}
+
+.summary-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.Return-button {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.button {
+    background: linear-gradient(135deg, #C4A484, #A67C52);
+    border:none;
+    color:black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #A67C52, #8B5E3B);
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+
+}

@@ -1,0 +1,110 @@
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e6ccb6; /* light brown */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header style */
+header {
+    background-color: #111439; /* dark blue */
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+/* container for the images */
+.Image-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 20px; 
+}
+
+/* container for each image */
+.image-list {
+    width: 280px;
+    height: 400px;
+    background-color: white; 
+    display: flex; /* make the image and text container flexbox */
+    flex-direction: column; /* stack the image and text on top of each other */
+    align-content: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px; 
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out /* smooth transition */
+}
+
+/* image style */
+.image-list img { 
+    width: 100%;
+    height: 150px;
+    border-radius: 15px; /* rounded corners */
+    object-fit: cover; /* cover the image */
+    margin-bottom: 10px; /* space between the image and text */
+    display: block; /* center the image */
+}
+
+/* text style */
+.image-list p {
+    padding: 12px; /* padding inside the image container */
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 10px; /* space between the text and the image */
+    font-size: 20px;
+}
+
+/* when hovering over the image container */
+.image-list:hover {
+    transform: scale(1.05); /* slightly enlarge the image */
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+/* Homepage button style */
+.Homepage-return {
+    text-align: center;
+    margin-top: 50px; /* space between the Homepage button and the last image */
+}
+
+/* button style */
+.Homepage {
+    background-color: #060928; /* dark blue */
+    color: white; /* white text */
+    border-radius: 8px; /* rounded corners */
+    border: none; 
+    padding: 12px 20px; /* padding inside the button */
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold; 
+    font-style: italic; 
+    transition: all 0.3s ease-in-out; /* smooth transition */
+}
+
+/* when hovering over the Homepage button */
+.Homepage:hover {
+    background-color: #2f1373; /* dark purple */
+    transform: scale(1.0); /* 1.0 is the default size */
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+/*Footer style*/
+footer {
+    background-color: #111439; /* dark blue */
+    text-align: center;
+    padding: 18px; /* padding inside the footer */
+    margin-top: 190px; /* space between the footer and the last image */
+    font-weight: bold;
+    color: white; /* white text */
+    font-size: 18px;
+    font-style: italic;
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
+}
