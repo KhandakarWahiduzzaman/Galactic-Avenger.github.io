@@ -1,24 +1,6 @@
 /* Abdulla' Zoo CSS styling For home page and Animal Web pages */
 
 /* The General Page Styling */
-body {
-    font-family: Arial, sans-serif;  /* Sets a clean and readable font */
-    margin: 0;                      /* Removes default margins */
-    padding: 0;                     /* Removes default padding */
-    background-color: #f4f4f4;       /* Sets a light gray background */
-}
-
-/* Sand Background for Student Homepage ONLY */
-.Animals-Home-Page{
-    background: url('/Middle East Animals Images/ME.jpg') no-repeat center center fixed;
-    background-size: cover; /* Covers entire screen */
-}
-/* greenish Background for Animal Pages ONLY */
-.Animal-Background{
-    background: url('/Middle East Animals Images/greenbcg.jpg') no-repeat center center fixed;
-    background-size: cover; /* Covers entire screen */
-
-}
 
 /* Header Styling */
 header {
@@ -50,6 +32,28 @@ header::before {
 header::after {
     right: 20px;
 }
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;  /* Sets a clean and readable font */
+    margin: 0;                      /* Removes default margins */
+    padding: 0;                     /* Removes default padding */
+    background-color: #f4f4f4;      /* Sets a light gray background */
+}
+
+/* Sand Background for Student Homepage ONLY */
+.Animals-Home-Page{
+    background: url('/Middle East Animals Images/ME.jpg') no-repeat center center fixed;
+    background-size: cover; /* Covers entire screen */
+}
+/* Greenish Background for Animal Pages ONLY */
+.Animal-Background{
+    background: url('/Middle East Animals Images/greenbcg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Covers entire screen */
+
+}
+
+
 
 /* Image Gallery  */
 .image-gallery {
@@ -101,36 +105,6 @@ header::after {
 }
 
 
-/* The Footer Styling */
-footer {
-    background: linear-gradient(to right, #3CB371, #2E8B57); /* Matching green footer */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 40px;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
-    position: relative; /* Needed for leaf decorations */
-}
-
-/* 🌿 Leaf Decorations on the Footer */
-footer::before,
-footer::after {
-    content: "🍃";
-    font-size: 25px;
-    position: absolute;
-    top: 10px;
-}
-
-footer::before {
-    left: 15px;
-}
-
-footer::after {
-    right: 15px;
-}
-
 /* Animal Image Gallery (for 3 images on each animal web page) */
 .animal-gallery {
     display: flex;
@@ -165,20 +139,6 @@ footer::after {
     line-height: 1.6;
     text-align: center;
     border-left: 5px solid #333; /* Stylish border effect */
-}
-
-/* Responsive Fix for Small Screens */
-@media (max-width: 768px) {
-    .animal-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .animal-gallery img {
-        width: 80%;
-        max-width: 350px;
-        height: auto;
-    }
 }
 
 /* Homepage Button Styling  */
@@ -220,10 +180,51 @@ footer::after {
     }
 }
 
-
-
 @media (max-width: 600px) { 
     .image-gallery {
         grid-template-columns: repeat(1, 1fr); /* 1 column layout */
     }
+}
+
+@media (max-width: 768px) {
+    .animal-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animal-gallery img {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+/* The Footer Styling */
+footer {
+    background: linear-gradient(to right, #3CB371, #2E8B57); /* Matching green footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+    position: relative; /* Needed for leaf decorations */
+}
+
+/* 🌿 Leaf Decorations on the Footer */
+footer::before,
+footer::after {
+    content: "🍃";
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+}
+
+footer::before {
+    left: 15px;
+}
+
+footer::after {
+    right: 15px;
 }
