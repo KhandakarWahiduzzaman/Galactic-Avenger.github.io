@@ -13,6 +13,12 @@ body {
     background: url('/Middle East Animals Images/ME.jpg') no-repeat center center fixed;
     background-size: cover; /* Covers entire screen */
 }
+/* greenish Background for Animal Pages ONLY */
+.Animal-Background{
+    background: url('/Middle East Animals Images/greenbcg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Covers entire screen */
+
+}
 
 /* Header Styling */
 header {
