@@ -8,6 +8,12 @@ body {
     background-color: #f4f4f4;       /* Sets a light gray background */
 }
 
+/* Sand Background for Student Homepage ONLY */
+.Animals-Home-Page{
+    background: url('/Middle East Animals Images/ME.jpg') no-repeat center center fixed;
+    background-size: cover; /* Covers entire screen */
+}
+
 /* Header Styling */
 header {
     background: linear-gradient(to right, #2E8B57, #3CB371); /* Smooth green gradient */
