@@ -42,12 +42,12 @@ body {
 }
 
 /* Sand Background for Student Homepage ONLY */
-.Animals-Home-Page{
+.Animals-Home-age{
     background: url('/Middle East Animals Images/ME.jpg') no-repeat center center fixed;
     background-size: cover; /* Covers entire screen */
 }
 /* Greenish Background for Animal Pages ONLY */
-.Animal-Background{
+.Animal-Backgrund{
     background: url('/Middle East Animals Images/greenbcg.jpg') no-repeat center center fixed;
     background-size: cover; /* Covers entire screen */
 
