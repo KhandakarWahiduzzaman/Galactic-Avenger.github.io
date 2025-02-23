@@ -50,7 +50,7 @@ header::after {
 
 /* Individual Image Item Styling */
 .image-item {
-    width: 50px;                       /* Sets a fixed width for each item */
+    width: 250px;                       /* Sets a fixed width for each item */
     height: auto;                        /* Allows height to adjust */
     text-align: center;                  /* Centers text under images */
     overflow: hidden;                     /* Prevents content from overflowing */
@@ -130,8 +130,8 @@ footer::after {
 
 .animal-gallery img {
     width: 30%;
-    max-width: 350px;
-    height: auto;
+    max-width: 400px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -164,8 +164,7 @@ footer::after {
 
     .animal-gallery img {
         width: 80%;
-        max-width: 350px;
-        height: auto;
+        max-width: 400px;
     }
 }
 
@@ -207,8 +206,6 @@ footer::after {
         grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
     }
 }
-
-
 
 @media (max-width: 600px) { 
     .image-gallery {
