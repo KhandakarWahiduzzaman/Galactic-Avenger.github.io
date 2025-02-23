@@ -1,12 +1,4 @@
-/* The General style */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fdf5e6;
-    text-align: center;
-    color: #333;
-}
+/* The Index Page General style */
 
 /* Header */
 header {
@@ -27,8 +19,17 @@ header p {
     font-size: 1.2em;
 }
 
-/* Hero Section */
-.hero {
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6;
+    text-align: center;
+    color: #333;
+}
+
+/* Student Section */
+.Student {
     background: url('images/zoo-background.jpg') no-repeat center center/cover;
     height: 300px;
     display: flex;
@@ -37,14 +38,14 @@ header p {
     animation: fadeIn 2s ease-in-out; /* Fade-in effect */
 }
 
-.hero-text {
+.Student-text {
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 20px;
     border-radius: 10px;
 }
 
-.hero-text h2 {
+.Student-text h2 {
     font-size: 2em;
 }
 
@@ -62,7 +63,6 @@ header p {
     display: block;
     width: 300px;
     text-align: center;
-    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -105,15 +105,6 @@ button:hover {
     background-color: #a0522d; /* Darker shade on hover */
 }
 
-/* Footer */
-footer {
-    background-color: #8B4513;
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
-    animation: fadeIn 2s ease-in-out; /* Footer fades in */
-}
-
 /* Fade-In Animation */
 @keyframes fadeIn {
     from {
@@ -126,3 +117,18 @@ footer {
     }
 }
 
+/*  Background for Index Homepage ONLY */
+.Index-Home-Page{
+    background: url('/Middle East Animals Images/index.jpg') no-repeat center center fixed;
+    background-size: cover; /* Covers entire screen */
+}
+
+
+/* Footer */
+footer {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Footer fades in */
+}

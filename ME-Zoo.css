@@ -53,8 +53,6 @@ body {
 
 }
 
-
-
 /* Image Gallery  */
 .image-gallery {
     display: flex;                     /* Uses CSS flexbox for layout */
@@ -111,7 +109,7 @@ body {
     justify-content: center;
     gap: 20px;
     margin: 20px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap; /* This ensures responsiveness */
 }
 
 .animal-gallery img {
