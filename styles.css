@@ -119,7 +119,7 @@ button:hover {
 
 /*  Background for Index Homepage ONLY */
 .Index-Home-Page{
-    background: url('/Middle East Animals Images/index.jpg') no-repeat center center fixed;
+    background: url('Middle East Animals Images/index.jpg') no-repeat center center fixed;
     background-size: cover; /* Covers entire screen */
 }
 
