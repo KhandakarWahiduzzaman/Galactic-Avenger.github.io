@@ -39,10 +39,10 @@ header::after {
     right: 20px;
 }
 
-/* Image Gallery (3x2 Grid Layout) */
+/* Image Gallery  */
 .image-gallery {
-    display: grid;                     /* Uses CSS grid for layout */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-adjust grid */
+    display: flex;                     /* Uses CSS flexbox for layout */
+    flex-wrap: wrap;
     gap: 20px;                          /* Adds spacing between images */
     justify-items: center;               /* Centers images inside the grid */
     padding: 20px;                       /* Adds spacing around the gallery */
@@ -50,7 +50,7 @@ header::after {
 
 /* Individual Image Item Styling */
 .image-item {
-    width: 50px;                       /* Sets a fixed width for each item */
+    width: 200px;                       /* Sets a fixed width for each item */
     height: auto;                        /* Allows height to adjust */
     text-align: center;                  /* Centers text under images */
     overflow: hidden;                     /* Prevents content from overflowing */
@@ -130,7 +130,7 @@ footer::after {
 
 .animal-gallery img {
     width: 30%;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -151,9 +151,22 @@ footer::after {
     margin: 30px auto;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 20px auto;
-    color: #333;
+    text-align: center;
+    border-left: 5px solid #333; /* Stylish border effect */
+}
+
+/* Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+    .animal-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animal-gallery img {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+    }
 }
 
 /* Homepage Button Styling  */
