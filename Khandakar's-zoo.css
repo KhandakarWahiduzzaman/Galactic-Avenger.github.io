@@ -60,6 +60,11 @@ body {
     font-size: 25px;
 }
 
+.image-list a {
+    color: inherit; /* inherit the color from the parent element */
+    text-decoration: none; /* remove underline */
+}
+
 /* when hovering over the image container */
 .image-list:hover {
     transform: scale(1.1); /* slightly enlarge the image */
