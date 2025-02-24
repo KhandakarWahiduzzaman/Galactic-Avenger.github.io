@@ -1,0 +1,114 @@
+/* Header style */
+header { 
+    background-color: #5C4033; /* brown */
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+/* Body style */
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #e6ccb6; /* light brown */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container for the images */ 
+.Item-picture { 
+    display: flex; /* make the image and text container flexbox */
+    flex-wrap: wrap; /* wrap the image and text */ 
+    gap: 60px; /* space between the images */
+    margin-top: 40px; /* space above the images */
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Image style */
+.image { 
+    height: 250px;
+    width: 340px;
+    border-radius: 15px; /* rounded corners */
+    object-fit: cover; /* cover the image */
+    margin-bottom: 15px; /* space between the image and text */
+    transition: transform 0.3s ease-in-out; /* smooth transition */
+}
+
+/* when hovering over the image */
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* slightly enlarge the image */
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+/* Image description style */
+.Item-description {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 18px; /* rounded corners */
+    padding: 15px; 
+    margin: auto; 
+    margin-top: 40px; 
+    max-width: 80%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* shadow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Text style */
+.Item-description p {
+    color: #022703; /* dark green text */
+    margin-top: 10px; /* space between the text and the image */
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Return button container style */
+.Khandakar-return {
+    text-align: center;
+    margin-top: 100px; /* space between the Homepage button and the last image */
+}
+
+/* Return button style */
+.Khandakar-return-button {
+    background-color: #88604d; /* light brown */
+    color: white; /* white text */
+    border-radius: 8px; /* rounded corners */
+    border: none; 
+    padding: 20px 30px; /* padding inside the button */
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold; 
+    font-style: italic; 
+    transition: all 0.3s ease-in-out; /* smooth transition */
+}
+
+/* when hovering over the Homepage button */
+.Khandakar-return-button:hover {
+    background-color: #704e3e; /* dark brown */
+    transform: scale(1.1); /* 1.0 is the default size */
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.3); /* shadow effect */
+
+}
+
+/* Audio style */
+.audio-container {
+    text-align: center;  /* Center the audio player */
+    margin-top: 90px;   /* Space above the audio */
+}
+
+/*Footer style*/
+footer {
+    background-color: #5C4033; /* brown */
+    text-align: center;
+    padding: 18px; /* padding inside the footer */
+    margin-top: 90px; /* space between the footer and the last image */
+    font-weight: bold;
+    color: white; /* white text */
+    font-size: 16px;
+    font-style: italic;
+    position: relative; /* position the footer at the bottom */
+    bottom: 0; 
+}
