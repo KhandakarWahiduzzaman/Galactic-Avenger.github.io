@@ -115,6 +115,5 @@ footer {
     font-size: 16px;
     font-style: italic;
     position: relative; /* position the footer at the bottom */
-    bottom: 0; 
-    width: 100%; 
+    bottom: 0;
 }
