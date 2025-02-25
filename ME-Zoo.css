@@ -1,10 +1,18 @@
-/* Abdulla' Zoo CSS styling For home page and Animal Web pages */
+/* Abdulla's Zoo CSS styling For home page and Animal Web pages */
 
-/* The General Page Styling */
+/* GLOBAL / BASE STYLES */
+body {
+    /* Base font settings and default background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-/* Header Styling */
+/* HEADER STYLES */
 header {
-    background: linear-gradient(to right, #2E8B57, #3CB371); /* Smooth green gradient */
+    /* Default green gradient for non-homepage headers */
+    background: linear-gradient(to right, #2E8B57, #3CB371);
     color: white;
     text-align: center;
     padding: 20px;
@@ -13,13 +21,13 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    position: relative; /* Needed for leaf decorations */
+    position: relative; /* Needed for leaf decorations (pseudo-elements) */
 }
 
-/* 🌿 Leaf Decorations on the Header */
+/* Leaf Decorations on the Header */
 header::before,
 header::after {
-    content: "🍃"; /* Unicode leaf icon */
+    content: "🍃"; /* Leaf icon */
     font-size: 30px;
     position: absolute;
     top: 10px;
@@ -33,98 +41,99 @@ header::after {
     right: 20px;
 }
 
+/* BACKGROUND CLASSES
+   - Different backgrounds for Homepage vs. Animal Pages */
 
-
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;  /* Sets a clean and readable font */
-    margin: 0;                      /* Removes default margins */
-    padding: 0;                     /* Removes default padding */
-    background-color: #f4f4f4;      /* Sets a light gray background */
+/* Sand background for the HOME PAGE
+(When <body> has class="Animals-Home-Page") */
+.Animals-Home-Page {
+    background: url("Middle East Animals Images/ME.jpg")
+                no-repeat center center fixed;
+    background-size: cover; /* Cover entire viewport */
 }
 
-/* Sand Background for Student Homepage ONLY */
-.Animals-Home-Page{
-    background: url('Middle East Animals Images/ME.jpg') no-repeat center center fixed;
-    background-size: cover; /* Covers entire screen */
-}
-
-.Animals-Home-Page header{
+/* Override header style on the homepage */
+.Animals-Home-Page header {
     background: linear-gradient(to right, #dec199, #e3c98e);
-    color: #3e2f1a;
+    color: #3e2f1a; /* Darker text for contrast on lighter background */
 }
 
-.Animals-Home-Page footer{
+/* Override footer style on the homepage */
+.Animals-Home-Page footer {
     background: linear-gradient(to right, #e3c98e, #dec199);
     color: #3e2f1a;
-
 }
 
-/* Greenish Background for Animal Pages ONLY */
-.Animal-Background{
-    background: url('Middle East Animals Images/greenbcg.jpg') no-repeat center center fixed;
-    background-size: cover; /* Covers entire screen */
-
+/* Greenish background for the ANIMAL PAGES
+(When <body> has class="Animal-Background") */
+.Animal-Background {
+    background: url("Middle East Animals Images/greenbcg.jpg")
+                no-repeat center center fixed;
+    background-size: cover;
 }
 
-/* Image Gallery  */
+/* Center Align Audio */
+.audio-container{
+    text-align: center;
+}
+
+/* IMAGE GALLERIES */
+/* Home Page: .image-gallery
+Displays multiple animals in a flexible layout */
 .image-gallery {
-    display: flex;                     /* Uses CSS flexbox for layout */
-    flex-wrap: wrap;
-    gap: 20px;                          /* Adds spacing between images */
-    justify-items: center;               /* Centers images inside the grid */
-    padding: 20px;                       /* Adds spacing around the gallery */
+    display: flex;
+    flex-wrap: wrap;      /* Wrap to next line on smaller screens */
+    gap: 20px;            /* Spacing between items */
+    justify-items: center;/* Horizontal alignment (if using grid) */
+    padding: 20px;
 }
 
-/* Individual Image Item Styling */
+/* Individual gallery items */
 .image-item {
-    width: 200px;                       /* Sets a fixed width for each item */
-    height: auto;                        /* Allows height to adjust */
-    text-align: center;                  /* Centers text under images */
-    overflow: hidden;                     /* Prevents content from overflowing */
-    border-radius: 10px;                  /* Rounds the corners of each image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    width: 200px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Removes default link styles */
+/* This remove default link styles inside .image-item */
 .image-item a {
-    text-decoration: none; /* Removes underlines from links */
-    color: black;          /* Ensures text remains black */
-    font-size: 18px;       /* Sets a readable font size */
-    font-weight: bold;     /* Makes text bold */
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-/* Image Styling */
+/* Images inside .image-item */
 .image-item img {
-    width: 100%;           /* Ensures the image fills its container */
-    height: 200px;         /* Sets a fixed height to keep images uniform */
-    object-fit: cover;     /* Ensures images fill the area without distortion */
-    display: block;        /* Prevents extra spacing below images */
-    border-radius: 10px;   /* Rounds the image corners */
-    transition: transform 0.3s ease; /* Smooth zoom-in effect */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Hover Effects */
-
+/* Hover effects for .image-item */
 .image-item:hover {
-    transform: scale(1.1); /* Increases size on hover (zoom effect) */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow */
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .image-item:hover img {
-    transform: scale(1.05); /* Slightly zooms in image when hovering */
+    transform: scale(1.05);
 }
 
-
-/* Animal Image Gallery (for 3 images on each animal web page) */
+/* Animal Pages: .animal-gallery Shows 3 images per animal page */
 .animal-gallery {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin: 20px;
-    flex-wrap: wrap; /* This ensures responsiveness */
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .animal-gallery img {
@@ -140,7 +149,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Info Box Styling */
+/* INFO BOX (Used on Animal Pages) */
 .info-box {
     background: lightgrey;
     padding: 20px;
@@ -151,10 +160,10 @@ body {
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
-    border-left: 5px solid #333; /* Stylish border effect */
+    border-left: 5px solid #333; /* Stylish left border */
 }
 
-/* Homepage Button Styling  */
+/* BACK BUTTON (Shared across pages) */
 .back-button {
     text-align: center;
     margin: 30px;
@@ -163,9 +172,9 @@ body {
 .back-button a {
     display: inline-block;
     padding: 12px 30px;
-    background: linear-gradient(135deg, #4CAF50, #45a049); /* Green gradient */
-    color: white !important;
-    text-decoration: none !important;
+    background: linear-gradient(to right, #dec199, #e3c98e);
+    color: #3e2f1a;
+    text-decoration: none;
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;
@@ -180,27 +189,23 @@ body {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* This animation will cause the images and paragraphs to fade in and slide up slightly when the page loads */
-.animal-info img, .animal-info p {
+/* SIMPLE FADE-IN ANIMATION
+This will apply to elements inside .animal-info */
+.animal-info img,
+.animal-info p {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 
-@media (max-width: 900px) { 
+/* For screens up to 600px wide: 1-column layout */
+@media (max-width: 600px) {
     .image-gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-
-
-@media (max-width: 600px) { 
-    .image-gallery {
-        grid-template-columns: repeat(1, 1fr); /* 1 column layout */
-    }
-}
-
+/* For screens up to 768px wide: stack .animal-gallery images vertically */
 @media (max-width: 768px) {
     .animal-gallery {
         flex-direction: column;
@@ -210,13 +215,13 @@ body {
     .animal-gallery img {
         width: 80%;
         max-width: 350px;
-        height: auto;
     }
 }
 
-/* The Footer Styling */
+/* FOOTER STYLES */
 footer {
-    background: linear-gradient(to right, #3CB371, #2E8B57); /* Matching green footer */
+    /* Default green gradient for non-homepage footers */
+    background: linear-gradient(to right, #3CB371, #2E8B57);
     color: white;
     text-align: center;
     padding: 15px;
@@ -227,7 +232,7 @@ footer {
     position: relative; /* Needed for leaf decorations */
 }
 
-/* 🌿 Leaf Decorations on the Footer */
+/* Leaf Decorations on the Footer */
 footer::before,
 footer::after {
     content: "🍃";
